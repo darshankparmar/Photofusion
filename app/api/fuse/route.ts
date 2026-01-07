@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
         const [basePart, productPart] = await Promise.all([fileToPart(base), fileToPart(product)]);
 
         const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-image-preview' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-image' });
         const systemHint = 'Create a new image by combining the provided images. Maintain photorealism, perspective, and lighting. Output only the final composed image.';
 
         const response = await model.generateContent([
