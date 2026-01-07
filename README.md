@@ -17,7 +17,7 @@ Open http://localhost:3001
 Notes
 - API route: `app/api/fuse/route.ts`
 - UI: `app/page.tsx`
-- Model: `gemini-2.5-flash-image-preview`
+- Model: `gemini-2.5-flash-image`
 - Large images may be slow; consider downscaling
 
 Example (Alia + Goggles)
